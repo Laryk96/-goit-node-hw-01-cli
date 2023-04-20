@@ -1,7 +1,7 @@
 const { readFile, writeFile } = require('fs/promises')
 const path = require('path')
 const { nanoid } = require('nanoid')
-const contactsPath = path.join(__dirname, 'db', 'books.json')
+const contactsPath = path.join(__dirname, 'db', 'contacts.json')
 
 const getContacts = async () => {
 	const result = await readFile(contactsPath)
